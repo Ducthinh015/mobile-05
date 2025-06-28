@@ -54,37 +54,6 @@ class _HomeMainState extends State<HomeMain> {
           ],
         ),
       ),
-      body: SafeArea(
-        child: IndexedStack(
-          index: _bottomNavIndex,
-          children: [
-            // Tab 0: Home (giữ nguyên UI cũ)
-            Column(
-              children: [
-                Expanded(
-                  child: ListView(
-                    padding: const EdgeInsets.symmetric(vertical: 20),
-                    children: [
-                      _buildWelcomeHeader(),
-                      _buildMainTitle(),
-                      const Carousel(),
-                      const SizedBox(height: 20),
-                      const SectionHeader(title: "Recently Album"),
-                      const RecentlyAlbumList(),
-                      const SizedBox(height: 20),
-                      const SectionHeader(title: "Recently played song"),
-                      const RecentlyPlayedList(),
-                      const SizedBox(height: 20),
-                      const SectionHeader(title: "Suggested Album Covers"),
-                      const SuggestedAlbumList(),
-                      const SizedBox(height: 120),
-                    ],
-                  ),
-                ),
-                const NowPlayingBar(),
-              ],
-            ),
-
             // Tab 1: Find — list bài hát vừa chơi gần đây
             SongListPage(songs: recentlyPlayedSongs),
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'routes/app_routes.dart';
-import 'views//login_email_page.dart';
-import 'views//login_phone_page.dart';
-import 'views//register_page.dart';
+import 'views/login_email_page.dart';
+import 'views/login_phone_page.dart';
+import 'views/register_page.dart';
 import 'views/home.dart'; // màn hình chính sau khi đăng nhập
 import 'config/theme.dart'; // nếu có custom theme riêng
 
